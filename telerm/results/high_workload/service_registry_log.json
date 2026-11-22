@@ -1,0 +1,24 @@
+[
+  {
+    "name": "service://telerm/UPF/S00017",
+    "instance_id": "S00017",
+    "service": "UPF",
+    "site_id": "edge-A",
+    "host": "127.0.0.1",
+    "port": 6101,
+    "state": "UNAVAILABLE",
+    "generation": 1,
+    "updated_at": 1795344297.1011026
+  },
+  {
+    "name": "service://telerm/UPF/S00086",
+    "instance_id": "S00086",
+    "service": "UPF",
+    "site_id": "edge-A",
+    "host": "127.0.0.1",
+    "port": 6101,
+    "state": "UNAVAILABLE",
+    "generation": 1,
+    "updated_at": 1795344297.1016808
+  }
+]

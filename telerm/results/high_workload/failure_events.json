@@ -1,0 +1,56 @@
+[
+  {
+    "heartbeat_age_s": 3.313,
+    "ts": 1795344291.5906484,
+    "site_id": "core-1",
+    "event": "SITE_SUSPECT",
+    "instance_id": null
+  },
+  {
+    "heartbeat_age_s": 3.229,
+    "ts": 1795344293.594285,
+    "site_id": "edge-B",
+    "event": "SITE_SUSPECT",
+    "instance_id": null
+  },
+  {
+    "heartbeat_age_s": 3.219,
+    "ts": 1795344294.095733,
+    "site_id": "edge-A",
+    "event": "SITE_SUSPECT",
+    "instance_id": null
+  },
+  {
+    "ts": 1795344294.0960662,
+    "site_id": "edge-A",
+    "event": "HOST_SITE_SUSPECT",
+    "instance_id": "S00017"
+  },
+  {
+    "ts": 1795344294.0961776,
+    "site_id": "edge-A",
+    "event": "HOST_SITE_SUSPECT",
+    "instance_id": "S00086"
+  },
+  {
+    "heartbeat_age_s": 6.32,
+    "ts": 1795344294.5970154,
+    "site_id": "core-1",
+    "event": "SITE_FAILED",
+    "instance_id": null
+  },
+  {
+    "heartbeat_age_s": 6.234,
+    "ts": 1795344296.599555,
+    "site_id": "edge-B",
+    "event": "SITE_FAILED",
+    "instance_id": null
+  },
+  {
+    "heartbeat_age_s": 6.224,
+    "ts": 1795344297.1002905,
+    "site_id": "edge-A",
+    "event": "SITE_FAILED",
+    "instance_id": null
+  }
+]
