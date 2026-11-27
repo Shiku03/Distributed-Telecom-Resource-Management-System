@@ -1,0 +1,221 @@
+{
+  "checks": [
+    {
+      "check": "manager process up",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "site edge-A process up",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "site edge-B process up",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "site core-1 process up",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all sites registered ACTIVE",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "generator ran and requests were admitted",
+      "passed": true,
+      "detail": "offered=16 admitted=15 blocked=1"
+    },
+    {
+      "check": "allocation never exceeds capacity; manager books balance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "terminating the generated services releases every resource and path",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "services admitted with explicit logical names",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "resolved endpoint is the site that really hosts it",
+      "passed": true,
+      "detail": "edge-A:7501 gen=1"
+    },
+    {
+      "check": "a client reaches it through the logical name",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "resize applied at site and in manager accounting",
+      "passed": true,
+      "detail": "cpu 1500.0->2000.0"
+    },
+    {
+      "check": "migration committed",
+      "passed": true,
+      "detail": "duration=19.0ms downtime=15.8ms"
+    },
+    {
+      "check": "same logical name now resolves to the destination with a newer generation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one site runs it; the source released it",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "client with a cached stale endpoint still reaches the service",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "accounting moved with the service",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "replica created on another site",
+      "passed": true,
+      "detail": "S00016-R1"
+    },
+    {
+      "check": "replica is synchronised and idle",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "standby holds state but is not running",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "client call issued during the outage was served by the promoted replica (failure transparency)",
+      "passed": true,
+      "detail": "after 4.2s"
+    },
+    {
+      "check": "once the site was SUSPECT the name was reported unavailable and never resolved to the dead site",
+      "passed": true,
+      "detail": "detection window: names resolved to the dead endpoint for 1.4s"
+    },
+    {
+      "check": "failure confirmed as FAILED",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "replica promoted: same name, new site, generation bumped",
+      "passed": true,
+      "detail": "name available again 4.1s after the kill"
+    },
+    {
+      "check": "no allocation to the failed site",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "books balance after failover",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "site process restarted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "recovered site reconciled back to ACTIVE",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no stale copy of the failed-over service is running",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "books balance after reconciliation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all node and link reservations released",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manager restarted on the same database",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "restored names are unavailable until their site is reconciled (or already verified)",
+      "passed": true,
+      "detail": "resolved"
+    },
+    {
+      "check": "sites re-registered/reconciled; services available again with identities intact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "resource accounting identical before and after the manager restart",
+      "passed": true,
+      "detail": "{'core-1': {'cpu': 1000.0, 'mem': 512.0, 'bw': 400.0}, 'edge-A': {'cpu': 500.0, 'mem': 256.0, 'bw': 50.0}, 'edge-B': {'cpu': 500.0, 'mem': 256.0, 'bw': 50.0}}"
+    },
+    {
+      "check": "migrated service kept its new location and generation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "replica survived the restart",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "books balance after restart",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "service ids are never reused",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "final termination releases everything",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all monitoring files written",
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    {
+      "check": "analytics exports written",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "manager reports a consistent ledger",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "passed": 43,
+  "failed": 0
+}

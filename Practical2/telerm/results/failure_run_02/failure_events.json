@@ -1,0 +1,62 @@
+[
+  {
+    "heartbeat_age_s": 1.502,
+    "ts": 1795344378.6777036,
+    "site_id": "edge-A",
+    "event": "SITE_SUSPECT",
+    "instance_id": null
+  },
+  {
+    "ts": 1795344378.6784348,
+    "site_id": "edge-A",
+    "event": "HOST_SITE_SUSPECT",
+    "instance_id": "S00016"
+  },
+  {
+    "heartbeat_age_s": 3.007,
+    "ts": 1795344380.182724,
+    "site_id": "edge-A",
+    "event": "SITE_FAILED",
+    "instance_id": null
+  },
+  {
+    "prev": "FAILED",
+    "restarted": true,
+    "ts": 1795344381.651158,
+    "site_id": "edge-A",
+    "event": "SITE_RECOVERY_STARTED",
+    "instance_id": null
+  },
+  {
+    "prev": "FAILED",
+    "restarted": true,
+    "ts": 1795344381.6513994,
+    "site_id": "edge-A",
+    "event": "SITE_RECOVERED",
+    "instance_id": null
+  },
+  {
+    "prev": "UNKNOWN",
+    "restarted": false,
+    "ts": 1795344384.1643534,
+    "site_id": "edge-A",
+    "event": "SITE_RECOVERED",
+    "instance_id": null
+  },
+  {
+    "prev": "UNKNOWN",
+    "restarted": false,
+    "ts": 1795344384.2838008,
+    "site_id": "edge-B",
+    "event": "SITE_RECOVERED",
+    "instance_id": null
+  },
+  {
+    "prev": "UNKNOWN",
+    "restarted": false,
+    "ts": 1795344384.344459,
+    "site_id": "core-1",
+    "event": "SITE_RECOVERED",
+    "instance_id": null
+  }
+]

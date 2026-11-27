@@ -1,0 +1,12 @@
+{
+  "requests_sent": 233,
+  "accepted": 130,
+  "blocked": 103,
+  "blocking_probability": 0.44206008583690987,
+  "counters": {
+    "messages_sent": 264,
+    "messages_recv": 264,
+    "bytes_sent": 48891,
+    "bytes_recv": 46007
+  }
+}

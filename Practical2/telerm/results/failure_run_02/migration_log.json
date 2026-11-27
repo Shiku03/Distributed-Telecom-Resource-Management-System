@@ -1,0 +1,152 @@
+{
+  "operations": [
+    {
+      "operation_id": "mig-e8c3dcb1eae8",
+      "operation_type": "MIGRATION",
+      "state": "COMMITTED",
+      "source_site": "edge-A",
+      "target_site": "core-1",
+      "instance_id": "S00017",
+      "started_at": 1795344376.2445157,
+      "updated_at": 1795344376.2677417,
+      "payload": {
+        "logical_name": "service://telerm/scenario/upf",
+        "old_generation": 1,
+        "new_generation": 2,
+        "old_path": [
+          "edge-A"
+        ],
+        "new_path": [
+          "edge-A",
+          "core-1"
+        ],
+        "demand": {
+          "cpu": 1500,
+          "mem": 512.0,
+          "bw": 400.0
+        },
+        "started_at": 1795344376.2437348,
+        "reason": "requested",
+        "committed_at": 1795344376.2637563,
+        "duration_s": 0.02387070655822754,
+        "downtime_s": 0.021498918533325195,
+        "source_released": true,
+        "frozen_at": 1795344376.2448955,
+        "completed_at": 1795344376.2676055
+      }
+    },
+    {
+      "operation_id": "mig-5d0151314679",
+      "operation_type": "MIGRATION",
+      "state": "COMMITTED",
+      "source_site": "edge-B",
+      "target_site": "core-1",
+      "instance_id": "S00020",
+      "started_at": 1795344382.251498,
+      "updated_at": 1795344382.2691529,
+      "payload": {
+        "logical_name": "service://telerm/scenario/keep-b",
+        "old_generation": 1,
+        "new_generation": 2,
+        "old_path": [
+          "edge-B"
+        ],
+        "new_path": [
+          "edge-B",
+          "core-1"
+        ],
+        "demand": {
+          "cpu": 1000.0,
+          "mem": 512.0,
+          "bw": 400.0
+        },
+        "started_at": 1795344382.250962,
+        "reason": "requested",
+        "committed_at": 1795344382.265685,
+        "duration_s": 0.018044710159301758,
+        "downtime_s": 0.01619410514831543,
+        "source_released": true,
+        "frozen_at": 1795344382.2516932,
+        "completed_at": 1795344382.2690067
+      }
+    }
+  ],
+  "events": [
+    {
+      "destination": "core-1",
+      "generation": 2,
+      "path": [
+        "edge-A",
+        "core-1"
+      ],
+      "source": "edge-A",
+      "ts": 1795344376.244733,
+      "event": "MIGRATION_STARTED",
+      "instance_id": "S00017",
+      "logical_name": "service://telerm/scenario/upf",
+      "site_id": "edge-A",
+      "operation_id": "mig-e8c3dcb1eae8"
+    },
+    {
+      "generation": 2,
+      "source": "edge-A",
+      "ts": 1795344376.2641163,
+      "event": "MIGRATION_COMMIT_DECIDED",
+      "instance_id": "S00017",
+      "logical_name": "service://telerm/scenario/upf",
+      "site_id": "core-1",
+      "operation_id": "mig-e8c3dcb1eae8"
+    },
+    {
+      "downtime_s": 0.0215,
+      "duration_s": 0.0239,
+      "generation": 2,
+      "source": "edge-A",
+      "source_released": true,
+      "ts": 1795344376.2678888,
+      "event": "MIGRATION_COMMITTED",
+      "instance_id": "S00017",
+      "logical_name": "service://telerm/scenario/upf",
+      "site_id": "core-1",
+      "operation_id": "mig-e8c3dcb1eae8"
+    },
+    {
+      "destination": "core-1",
+      "generation": 2,
+      "path": [
+        "edge-B",
+        "core-1"
+      ],
+      "source": "edge-B",
+      "ts": 1795344382.2515943,
+      "event": "MIGRATION_STARTED",
+      "instance_id": "S00020",
+      "logical_name": "service://telerm/scenario/keep-b",
+      "site_id": "edge-B",
+      "operation_id": "mig-5d0151314679"
+    },
+    {
+      "generation": 2,
+      "source": "edge-B",
+      "ts": 1795344382.2658725,
+      "event": "MIGRATION_COMMIT_DECIDED",
+      "instance_id": "S00020",
+      "logical_name": "service://telerm/scenario/keep-b",
+      "site_id": "core-1",
+      "operation_id": "mig-5d0151314679"
+    },
+    {
+      "downtime_s": 0.0162,
+      "duration_s": 0.018,
+      "generation": 2,
+      "source": "edge-B",
+      "source_released": true,
+      "ts": 1795344382.2693777,
+      "event": "MIGRATION_COMMITTED",
+      "instance_id": "S00020",
+      "logical_name": "service://telerm/scenario/keep-b",
+      "site_id": "core-1",
+      "operation_id": "mig-5d0151314679"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "events": [
+    {
+      "incomplete_operations": 0,
+      "processes": 0,
+      "replicas": 0,
+      "services_unavailable_until_reconciled": true,
+      "sites": 0,
+      "ts": 1795344081.9547668,
+      "event": "MANAGER_RESTORED",
+      "instance_id": null,
+      "logical_name": null,
+      "site_id": null,
+      "operation_id": null
+    }
+  ],
+  "failover_operations": []
+}

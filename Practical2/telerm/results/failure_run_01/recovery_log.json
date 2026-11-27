@@ -1,0 +1,168 @@
+{
+  "events": [
+    {
+      "incomplete_operations": 0,
+      "processes": 0,
+      "replicas": 0,
+      "services_unavailable_until_reconciled": true,
+      "sites": 0,
+      "ts": 1795344315.909593,
+      "event": "MANAGER_RESTORED",
+      "instance_id": null,
+      "logical_name": null,
+      "site_id": null,
+      "operation_id": null
+    },
+    {
+      "failed_site": "edge-A",
+      "recovery_time_s": 4.3242,
+      "via": "replica_promotion",
+      "ts": 1795344331.0340574,
+      "event": "SERVICE_RECOVERED",
+      "instance_id": "S00016",
+      "logical_name": "service://telerm/scenario/ims",
+      "site_id": "edge-B",
+      "operation_id": "fo-58f91e20a2b3"
+    },
+    {
+      "lost": [],
+      "missing": [],
+      "previous_status": "FAILED",
+      "released": [],
+      "replicas_present": [],
+      "restarted": true,
+      "restored": [],
+      "source": "register",
+      "ts": 1795344331.4482925,
+      "event": "SITE_RECONCILED",
+      "instance_id": null,
+      "logical_name": null,
+      "site_id": "edge-A",
+      "operation_id": null
+    },
+    {
+      "incomplete_operations": 0,
+      "processes": 2,
+      "replicas": 1,
+      "services_unavailable_until_reconciled": true,
+      "sites": 3,
+      "ts": 1795344333.811388,
+      "event": "MANAGER_RESTORED",
+      "instance_id": null,
+      "logical_name": null,
+      "site_id": null,
+      "operation_id": null
+    },
+    {
+      "recovery_time_s": 0.0382,
+      "via": "site_reconciliation",
+      "ts": 1795344333.8483443,
+      "event": "SERVICE_RECOVERED",
+      "instance_id": "S00020",
+      "logical_name": "service://telerm/scenario/keep-b",
+      "site_id": "core-1",
+      "operation_id": null
+    },
+    {
+      "lost": [],
+      "missing": [],
+      "previous_status": "UNKNOWN",
+      "released": [],
+      "replicas_present": [],
+      "restarted": false,
+      "restored": [
+        "S00020"
+      ],
+      "source": "heartbeat",
+      "ts": 1795344333.8484783,
+      "event": "SITE_RECONCILED",
+      "instance_id": null,
+      "logical_name": null,
+      "site_id": "core-1",
+      "operation_id": null
+    },
+    {
+      "recovery_time_s": 0.1549,
+      "via": "site_reconciliation",
+      "ts": 1795344333.9647691,
+      "event": "SERVICE_RECOVERED",
+      "instance_id": "S00019",
+      "logical_name": "service://telerm/scenario/keep-a",
+      "site_id": "edge-A",
+      "operation_id": null
+    },
+    {
+      "lost": [],
+      "missing": [],
+      "previous_status": "UNKNOWN",
+      "released": [],
+      "replicas_present": [],
+      "restarted": false,
+      "restored": [
+        "S00019"
+      ],
+      "source": "heartbeat",
+      "ts": 1795344333.9648886,
+      "event": "SITE_RECONCILED",
+      "instance_id": null,
+      "logical_name": null,
+      "site_id": "edge-A",
+      "operation_id": null
+    },
+    {
+      "replica_id": "S00019-R1",
+      "ts": 1795344334.192153,
+      "event": "REPLICA_RECONCILED",
+      "instance_id": "S00019",
+      "logical_name": null,
+      "site_id": "edge-B",
+      "operation_id": null
+    },
+    {
+      "lost": [],
+      "missing": [],
+      "previous_status": "UNKNOWN",
+      "released": [],
+      "replicas_present": [
+        "S00019-R1"
+      ],
+      "restarted": false,
+      "restored": [],
+      "source": "heartbeat",
+      "ts": 1795344334.1923807,
+      "event": "SITE_RECONCILED",
+      "instance_id": null,
+      "logical_name": null,
+      "site_id": "edge-B",
+      "operation_id": null
+    }
+  ],
+  "failover_operations": [
+    {
+      "operation_id": "fo-58f91e20a2b3",
+      "operation_type": "FAILOVER",
+      "state": "COMMITTED",
+      "source_site": "edge-A",
+      "target_site": "edge-B",
+      "instance_id": "S00016",
+      "started_at": 1795344329.9544182,
+      "updated_at": 1795344331.033284,
+      "payload": {
+        "replica_id": "S00016-R1",
+        "reason": "site_failure",
+        "new_generation": 2,
+        "new_path": [
+          "edge-A",
+          "edge-B"
+        ],
+        "force": false,
+        "started_at": 1795344329.9541974,
+        "fence_method": "lease_expiry",
+        "duration_s": 1.0790081024169922,
+        "recovery_time_s": 4.324233770370483,
+        "outage_s": 4.323999881744385,
+        "completed_at": 1795344331.0332055
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "strategy": "naive",
+    "processes": 8,
+    "resources": 4,
+    "duration_s": 4.07,
+    "completions": 129,
+    "aborts": 276,
+    "throughput_per_s": 31.7,
+    "abort_rate": 0.6815,
+    "latency_ms_mean": 95.884,
+    "deadlocks_detected": 276,
+    "wounds_issued": 0,
+    "mean_resource_utilisation_pct": 96.05,
+    "per_resource_utilisation_pct": {
+      "R1": 95.95,
+      "R0": 97.06,
+      "R2": 94.89,
+      "R3": 96.28
+    }
+  },
+  {
+    "strategy": "ordered",
+    "processes": 8,
+    "resources": 4,
+    "duration_s": 4.071,
+    "completions": 413,
+    "aborts": 0,
+    "throughput_per_s": 101.44,
+    "abort_rate": 0.0,
+    "latency_ms_mean": 78.149,
+    "deadlocks_detected": 0,
+    "wounds_issued": 0,
+    "mean_resource_utilisation_pct": 77.02,
+    "per_resource_utilisation_pct": {
+      "R1": 70.15,
+      "R0": 99.97,
+      "R2": 75.54,
+      "R3": 62.42
+    }
+  },
+  {
+    "strategy": "wound_wait",
+    "processes": 8,
+    "resources": 4,
+    "duration_s": 4.02,
+    "completions": 488,
+    "aborts": 7117,
+    "throughput_per_s": 121.4,
+    "abort_rate": 0.9358,
+    "latency_ms_mean": 14.717,
+    "deadlocks_detected": 0,
+    "wounds_issued": 582,
+    "mean_resource_utilisation_pct": 79.61,
+    "per_resource_utilisation_pct": {
+      "R3": 79.24,
+      "R1": 79.75,
+      "R0": 81.31,
+      "R2": 78.13
+    }
+  }
+]

@@ -1,0 +1,217 @@
+{
+  "operations": [
+    {
+      "operation_id": "rep-3bc3c342fa10",
+      "operation_type": "REPLICATION",
+      "state": "COMMITTED",
+      "source_site": "edge-A",
+      "target_site": "edge-B",
+      "instance_id": "S00016",
+      "started_at": 1795344326.2220383,
+      "updated_at": 1795344326.2263346,
+      "payload": {
+        "replica_id": "S00016-R1",
+        "mode": "STANDBY",
+        "demand": {
+          "cpu": 500.0,
+          "mem": 256.0,
+          "bw": 50.0
+        },
+        "sync_path": [
+          "edge-A",
+          "edge-B"
+        ],
+        "duration_s": 0.004767894744873047
+      }
+    },
+    {
+      "operation_id": "fo-58f91e20a2b3",
+      "operation_type": "FAILOVER",
+      "state": "COMMITTED",
+      "source_site": "edge-A",
+      "target_site": "edge-B",
+      "instance_id": "S00016",
+      "started_at": 1795344329.9544182,
+      "updated_at": 1795344331.033284,
+      "payload": {
+        "replica_id": "S00016-R1",
+        "reason": "site_failure",
+        "new_generation": 2,
+        "new_path": [
+          "edge-A",
+          "edge-B"
+        ],
+        "force": false,
+        "started_at": 1795344329.9541974,
+        "fence_method": "lease_expiry",
+        "duration_s": 1.0790081024169922,
+        "recovery_time_s": 4.324233770370483,
+        "outage_s": 4.323999881744385,
+        "completed_at": 1795344331.0332055
+      }
+    },
+    {
+      "operation_id": "rep-a21ce90de6b7",
+      "operation_type": "REPLICATION",
+      "state": "COMMITTED",
+      "source_site": "edge-A",
+      "target_site": "edge-B",
+      "instance_id": "S00019",
+      "started_at": 1795344332.0755453,
+      "updated_at": 1795344332.0786204,
+      "payload": {
+        "replica_id": "S00019-R1",
+        "mode": "STANDBY",
+        "demand": {
+          "cpu": 500.0,
+          "mem": 256.0,
+          "bw": 50.0
+        },
+        "sync_path": [
+          "edge-A",
+          "edge-B"
+        ],
+        "duration_s": 0.003726959228515625
+      }
+    }
+  ],
+  "events": [
+    {
+      "primary_site": "edge-A",
+      "replica_id": "S00016-R1",
+      "ts": 1795344326.2224755,
+      "event": "REPLICA_CREATING",
+      "instance_id": "S00016",
+      "logical_name": "service://telerm/scenario/ims",
+      "site_id": "edge-B",
+      "operation_id": "rep-3bc3c342fa10"
+    },
+    {
+      "duration_s": 0.0048,
+      "mode": "STANDBY",
+      "primary_site": "edge-A",
+      "replica_id": "S00016-R1",
+      "ts": 1795344326.226486,
+      "event": "REPLICA_CREATED",
+      "instance_id": "S00016",
+      "logical_name": "service://telerm/scenario/ims",
+      "site_id": "edge-B",
+      "operation_id": "rep-3bc3c342fa10"
+    },
+    {
+      "bytes": 405,
+      "duration_ms": 2.659,
+      "replica_id": "S00016-R1",
+      "seq": 2,
+      "ts": 1795344326.4289694,
+      "event": "REPLICA_SYNCED",
+      "instance_id": "S00016",
+      "logical_name": null,
+      "site_id": "edge-B",
+      "operation_id": null
+    },
+    {
+      "bytes": 404,
+      "duration_ms": 2.534,
+      "replica_id": "S00016-R1",
+      "seq": 3,
+      "ts": 1795344326.932032,
+      "event": "REPLICA_SYNCED",
+      "instance_id": "S00016",
+      "logical_name": null,
+      "site_id": "edge-B",
+      "operation_id": null
+    },
+    {
+      "failed_site": "edge-A",
+      "generation": 2,
+      "reason": "site_failure",
+      "replica_id": "S00016-R1",
+      "ts": 1795344329.9545195,
+      "event": "FAILOVER_STARTED",
+      "instance_id": "S00016",
+      "logical_name": "service://telerm/scenario/ims",
+      "site_id": "edge-B",
+      "operation_id": "fo-58f91e20a2b3"
+    },
+    {
+      "method": "lease_expiry",
+      "ts": 1795344330.9636214,
+      "event": "PRIMARY_FENCED",
+      "instance_id": "S00016",
+      "logical_name": "service://telerm/scenario/ims",
+      "site_id": "edge-A",
+      "operation_id": "fo-58f91e20a2b3"
+    },
+    {
+      "duration_s": 1.079,
+      "failed_site": "edge-A",
+      "fence_method": "lease_expiry",
+      "generation": 2,
+      "recovery_time_s": 4.3242,
+      "replica_id": "S00016-R1",
+      "ts": 1795344331.0337055,
+      "event": "FAILOVER_COMPLETED",
+      "instance_id": "S00016",
+      "logical_name": "service://telerm/scenario/ims",
+      "site_id": "edge-B",
+      "operation_id": "fo-58f91e20a2b3"
+    },
+    {
+      "primary_site": "edge-A",
+      "replica_id": "S00019-R1",
+      "ts": 1795344332.0758324,
+      "event": "REPLICA_CREATING",
+      "instance_id": "S00019",
+      "logical_name": "service://telerm/scenario/keep-a",
+      "site_id": "edge-B",
+      "operation_id": "rep-a21ce90de6b7"
+    },
+    {
+      "duration_s": 0.0037,
+      "mode": "STANDBY",
+      "primary_site": "edge-A",
+      "replica_id": "S00019-R1",
+      "ts": 1795344332.0787206,
+      "event": "REPLICA_CREATED",
+      "instance_id": "S00019",
+      "logical_name": "service://telerm/scenario/keep-a",
+      "site_id": "edge-B",
+      "operation_id": "rep-a21ce90de6b7"
+    },
+    {
+      "bytes": 408,
+      "duration_ms": 2.375,
+      "replica_id": "S00019-R1",
+      "seq": 2,
+      "ts": 1795344332.5314386,
+      "event": "REPLICA_SYNCED",
+      "instance_id": "S00019",
+      "logical_name": null,
+      "site_id": "edge-B",
+      "operation_id": null
+    },
+    {
+      "bytes": 406,
+      "duration_ms": 2.177,
+      "replica_id": "S00019-R1",
+      "seq": 3,
+      "ts": 1795344333.0338712,
+      "event": "REPLICA_SYNCED",
+      "instance_id": "S00019",
+      "logical_name": null,
+      "site_id": "edge-B",
+      "operation_id": null
+    },
+    {
+      "reason": "primary_terminated:exit",
+      "replica_id": "S00019-R1",
+      "ts": 1795344334.2999256,
+      "event": "REPLICA_REMOVED",
+      "instance_id": "S00019",
+      "logical_name": "service://telerm/scenario/keep-a",
+      "site_id": "edge-B",
+      "operation_id": null
+    }
+  ]
+}

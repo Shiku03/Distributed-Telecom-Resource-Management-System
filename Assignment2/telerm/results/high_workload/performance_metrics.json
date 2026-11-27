@@ -1,0 +1,199 @@
+{
+  "generated_at": 1795344299.1687205,
+  "uptime_s": 217.21439218521118,
+  "resource_utilisation": {
+    "per_site_mean_peak": {
+      "edge-A": {
+        "cpu": {
+          "mean": 0.5560810810810811,
+          "peak": 1.0
+        },
+        "mem": {
+          "mean": 0.27804054054054056,
+          "peak": 0.5
+        },
+        "bw": {
+          "mean": 0.3571891891891892,
+          "peak": 0.645
+        }
+      },
+      "edge-B": {
+        "cpu": {
+          "mean": 0.3830882352941177,
+          "peak": 1.0
+        },
+        "mem": {
+          "mean": 0.19099264705882352,
+          "peak": 0.53125
+        },
+        "bw": {
+          "mean": 0.1799705882352941,
+          "peak": 0.8
+        }
+      },
+      "core-1": {
+        "cpu": {
+          "mean": 0.5204274891774892,
+          "peak": 1.0
+        },
+        "mem": {
+          "mean": 0.17009943181818182,
+          "peak": 0.34375
+        },
+        "bw": {
+          "mean": 0.09920779220779222,
+          "peak": 0.193
+        }
+      }
+    },
+    "samples": 216
+  },
+  "allocation": {
+    "offered": 286,
+    "admitted": 101,
+    "blocked": 185,
+    "success_rate": 0.3531468531468531,
+    "decision_time_ms": {
+      "count": 286,
+      "mean": 1.549037761674458,
+      "p95": 4.205699980957434,
+      "max": 37.78259997488931
+    }
+  },
+  "service_availability": {
+    "availability": 0.9935003916047775,
+    "service_seconds": 2596.672406470108,
+    "unavailable_seconds": 16.877353772735596
+  },
+  "migration": {
+    "started": 0,
+    "committed": 0,
+    "aborted_or_failed": 0,
+    "success_rate": null,
+    "duration_s": {
+      "count": 0,
+      "mean": null,
+      "p95": null,
+      "max": null
+    },
+    "downtime_s": {
+      "count": 0,
+      "mean": null,
+      "p95": null,
+      "max": null
+    }
+  },
+  "failover": {
+    "started": 0,
+    "committed": 0,
+    "success_rate": null,
+    "recovery_time_s": {
+      "count": 0,
+      "mean": null,
+      "p95": null,
+      "max": null
+    },
+    "failover_duration_s": {
+      "count": 0,
+      "mean": null,
+      "p95": null,
+      "max": null
+    },
+    "failure_detection_s": {
+      "count": 3,
+      "mean": 6.259333333333333,
+      "p95": 6.32,
+      "max": 6.32
+    }
+  },
+  "replication_overhead": {
+    "replicas_created": 0,
+    "standby_reserved": {
+      "cpu": 0,
+      "mem": 0,
+      "bw": 0
+    },
+    "primary_reserved": {
+      "cpu": 2000.0,
+      "mem": 1024.0,
+      "bw": 800.0
+    },
+    "standby_to_primary_cpu_ratio": 0.0,
+    "standby_share_of_allocated_cpu_time_avg": 0.0,
+    "sync_bandwidth_reserved": 0,
+    "sync_rounds_ok": 0,
+    "sync_rounds_failed": 0,
+    "sync_bytes": 0,
+    "sync_ms_mean": null
+  },
+  "service_resolution": {
+    "manager_side_ms": {
+      "count": 0,
+      "mean": null,
+      "p95": null,
+      "max": null
+    },
+    "outcomes": {
+      "ok": 0,
+      "migrating": 0,
+      "unavailable": 0,
+      "not_found": 0
+    }
+  },
+  "network_bandwidth_utilisation": {
+    "edge-A<->core-1": {
+      "mean": 0.3597685185185185,
+      "peak": 0.99
+    },
+    "edge-B<->core-1": {
+      "mean": 0.3549537037037037,
+      "peak": 1.0
+    },
+    "edge-A<->edge-B": {
+      "mean": 0.3299768518518519,
+      "peak": 1.0
+    }
+  },
+  "failed_requests": {
+    "blocked": 185,
+    "reasons": {
+      "node_capacity": 169,
+      "link_bandwidth": 16
+    },
+    "failed_resolutions": 0
+  },
+  "throughput": {
+    "admissions_per_s": 0.4649783975358355,
+    "completions_per_s": 0.45577090451532387,
+    "jobs_per_s": 512.1437805334061,
+    "client_calls_served": 0
+  },
+  "migration_downtime_per_migrated_instance_s": {
+    "count": 0,
+    "mean": null,
+    "p95": null,
+    "max": null
+  },
+  "coordinator_counters": {
+    "migration": {
+      "started": 0,
+      "committed": 0,
+      "aborted": 0,
+      "failed_forward": 0
+    },
+    "replication": {
+      "sync_ok": 0,
+      "sync_fail": 0,
+      "sync_bytes": 0,
+      "sync_ms_total": 0.0,
+      "failovers_started": 0,
+      "failovers_ok": 0,
+      "failovers_failed": 0
+    }
+  },
+  "notes": {
+    "in_memory_counters": "offered/admitted/blocked, decision time, resolution latency and availability accumulators are per manager process; migration, failover and replication figures are read from SQLite and span manager restarts"
+  },
+  "ledger_consistent": true,
+  "ledger_problems": []
+}
