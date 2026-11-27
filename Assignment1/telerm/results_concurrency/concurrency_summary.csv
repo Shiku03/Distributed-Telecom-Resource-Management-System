@@ -1,4 +1,0 @@
-strategy,processes,resources,duration_s,completions,aborts,throughput_per_s,abort_rate,latency_ms_mean,deadlocks_detected,wounds_issued,mean_resource_utilisation_pct
-naive,8,4,4.07,129,276,31.7,0.6815,95.884,276,0,96.05
-ordered,8,4,4.071,413,0,101.44,0.0,78.149,0,0,77.02
-wound_wait,8,4,4.02,488,7117,121.4,0.9358,14.717,0,582,79.61
